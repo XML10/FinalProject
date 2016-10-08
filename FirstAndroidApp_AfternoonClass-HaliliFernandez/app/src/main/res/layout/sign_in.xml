@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/uname"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ETun" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:id="@+id/pass"
+        android:layout_below="@+id/uname"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_alignStart="@+id/uname"
+        android:layout_marginTop="31dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm Password"
+        android:id="@+id/cpass"
+        android:layout_below="@+id/pass"
+        android:layout_toLeftOf="@+id/ETcp"
+        android:layout_toStartOf="@+id/ETcp"
+        android:layout_marginTop="29dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETpass"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_above="@+id/ETcp"
+        android:layout_toRightOf="@+id/pass"
+        android:layout_toEndOf="@+id/pass" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETcp"
+        android:layout_alignBottom="@+id/cpass"
+        android:layout_alignLeft="@+id/ETpass"
+        android:layout_alignStart="@+id/ETpass"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETemail"
+        android:layout_above="@+id/ETpass"
+        android:layout_alignLeft="@+id/ETpass"
+        android:layout_alignStart="@+id/ETpass"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:id="@+id/btnok"
+        android:layout_below="@+id/ETcp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:id="@+id/textView4"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/ETpass"
+        android:layout_toStartOf="@+id/ETpass"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_toLeftOf="@+id/ETpass"
+        android:layout_toStartOf="@+id/ETpass"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/textView6"
+        android:layout_above="@+id/ETemail"
+        android:layout_toLeftOf="@+id/ETpass"
+        android:layout_toStartOf="@+id/ETpass" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETfn"
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/ETln"
+        android:layout_alignStart="@+id/ETln" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETln"
+        android:layout_below="@+id/ETfn"
+        android:layout_alignLeft="@+id/ETemail"
+        android:layout_alignStart="@+id/ETemail"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ETun"
+        android:layout_below="@+id/ETln"
+        android:layout_toRightOf="@+id/cpass"
+        android:layout_toEndOf="@+id/cpass"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
